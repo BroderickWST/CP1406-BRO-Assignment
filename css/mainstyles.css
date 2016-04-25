@@ -2,3 +2,13 @@
     background-color: transparent;
     border: none;
 }
+
+.navbar-default .navbar-nav .active a {
+    background-color: transparent;
+    color: #E0405C;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
