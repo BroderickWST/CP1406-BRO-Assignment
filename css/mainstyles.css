@@ -19,3 +19,9 @@
 .donatebutton {
     float: right;
 }
+
+.col-center {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
