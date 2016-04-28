@@ -1,9 +1,8 @@
 .navbar-default {
-    background-color: transparent;
-    border: none;
-    padding-bottom: 30px;
-	background-image: url("images/header-background.jpg");
-	/*-- image above isn't linking properly --*/
+	background-color: transparent;
+	border: none;
+	padding-bottom: 30px;
+	background-image: url(../images/header-background.jpg);	
 }
 
 .navbar-default .navbar-nav .active a {
