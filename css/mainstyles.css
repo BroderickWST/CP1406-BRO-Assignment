@@ -67,13 +67,5 @@ body {
 	padding-bottom: 175px;
 	background-image: url(../images/testjumbo.jpg);
 	background-repeat: no-repeat;
-	background-attachement: fixed;
 	background-position: center;
-/* requires automated rotation of images and arrows allowing user to rotate images ascending or descending */
-}
-
-.jumbotron img { 
-	height: auto;
-	max-width: 100%;
-/* not working as intended */
 }
