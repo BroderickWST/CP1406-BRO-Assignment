@@ -3,6 +3,7 @@
 	border: none;
 	padding-bottom: 30px;
 	background-image: url(../images/header-background.jpg);	
+	background-repeat: repeat-x;
 }
 
 .navbar-default .navbar-nav .active a {
