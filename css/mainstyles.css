@@ -70,3 +70,34 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.newscontent {
+	background-color: #CCF3FF;
+	border-radius: 15px;
+	padding: 15px 35px 15px 35px;
+	margin-left: -35px;
+	margin-right: -35px;
+}
+
+.container h1{
+	margin-top: 0px;
+}
+
+.newscontent img{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border-left: 5px solid #EE7B48;
+	border-right: 5px solid #E0305C;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	background-position: 0 0, 0 100% ;
+  	background-repeat: no-repeat;
+  	-webkit-background-size: 100% 5px;
+  	-moz-background-size: 100% 5px;
+  	background-size: 100% 5px;
+	background-image: -webkit-linear-gradient(left, #EE7B48 0%, #E0305C 100%), -webkit-linear-gradient(left, #EE7B48 0%, #E0305C 100%);
+	background-image: -moz-linear-gradient(left, #EE7B48 0%, #E0305C 100%), -moz-linear-gradient(left, #EE7B48 0%, #E0305C 100%);
+	background-image: -o-linear-gradient(left, #EE7B48 0%, #E0305C 100%), -o-linear-gradient(left, #EE7B48 0%, #E0305C 100%);
+	background-image: linear-gradient(to right, #EE7B48 0%, #E0305C 100%), linear-gradient(to right, #EE7B48 0%, #E0305C 100%);
+	/* Not working as intended, Not final */
