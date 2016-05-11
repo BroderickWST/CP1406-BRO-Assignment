@@ -74,7 +74,13 @@ body {
 	overflow: hidden;
 }
 
-.jumbotron h1, p {
+.jumbotron p {
+	color: white;
+	margin-left: 100px;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.jumbotron h1 {
 	color: white;
 	margin-left: 100px;
 	text-shadow: 1px 1px 2px #000000;
@@ -88,4 +94,20 @@ body {
 .jumbotron a:link {
 	color: white;
 	text-decoration: none;
+}
+
+.mission-statement p {
+	font-size: 27px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+    word-spacing: 1px;
+	line-height: 1.8;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.mission-statement {
+    width: auto;
+    margin-left: 300px;
+	margin-right: 300px;
 }
