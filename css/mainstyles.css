@@ -130,6 +130,16 @@ body {
 	text-decoration: none;
 }
 
+.separator {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.newsevents {
+	font-family: 'Montserrat', sans-serif;
+
+}
+
 .mission-statement p {
 	font-size: 27px;
 	text-transform: capitalize;
@@ -140,12 +150,6 @@ body {
 	font-family: 'Cardo', serif;
 }
 
-.separator {
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-.newsevents {
-	font-family: 'Montserrat', sans-serif;
-
+.mission-statement {
+	margin-top: -10px;
 }
