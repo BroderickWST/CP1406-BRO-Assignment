@@ -17,6 +17,16 @@
     <![endif]-->
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -53,22 +63,20 @@
 </nav>
 <div class="indexjumbo">
 <div class="jumbotron"> <!-- Incorporate columns into jumbotron, instead of padding -->
-  <div class="container">
     <h1>Become a member!</h1>
     <p>Interested in joining the Barrier Reef Ochestra family?<br>
       Those of all walks, welcome!<br>
       Be it performing, sponsoring or just supporting, find out more through the link...</p>
     <a href="membership.html">
     <button type="button" class="btn btn-primary">Join Here!</button>
-    </a> </div>
+    </a>
 </div>
 </div>
 
 <div class="row">
-<div class="col-md-6 col-md-offset-3">
+<div class="col-md-8 col-md-offset-2">
   <div class="mission-statement"> <!-- Messed up on Mobile?? -->
-    <p><em>The orchestra provides an opportunity for musicians to play orchestral music
-      and for the community to see and hear live orchestral concerts</em></p>
+    <p><em>The orchestra provides an opportunity for musicians to play orchestral music and for the community to see and hear live orchestral concerts</em></p>
   </div>
 </div>
 </div>
@@ -81,12 +89,19 @@
 	<div class="col-md-6 col-md-offset-1">
 		<div class="newsevents">
 		<h1>News and Announcements</h1>
-		</div>
+		<div class="newseventscontent">
+        	<div class="story1">
+            <p>IMAGE</p>
+            <p>TITLE OF STORY</p>
+            <p>STORY</p>
+            </div>
+        </div>
+        </div>
 	</div>
 
 	<div class="col-md-3 col-md-offset-1">
 		<div class="facebook">
-		<p>Facebook goes here</p>
+		<div class="fb-page" data-href="https://www.facebook.com/nqorchestra/" data-tabs="timeline" data-width="390" data-height="1000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nqorchestra/"><a href="https://www.facebook.com/nqorchestra/">Barrier Reef Orchestra</a></blockquote></div></div>
     	</div>
 	</div>
 </div>
