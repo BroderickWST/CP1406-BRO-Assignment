@@ -122,7 +122,31 @@ body {
 }
 
 
+.events {
+	background-color: #CCF3FF;
+	border-radius: 25px;
+	margin: 0px 0px 0px px;
+	padding: 0px 30px 0px 30px;
+}
 
+.events h1 {
+	font-size: 22px;
+}
+
+.events br {
+	display: block;
+	margin: 10px 0px;
+}
+
+.pasteventslink {
+	text-align: center;
+	border-radius: 25px;
+	background-color: #80aeb7;
+}
+
+.pasteventslink a{
+	color: #FFFFFF;
+}
 /*
 .newsevents {
 	font-family: 'Montserrat', sans-serif;
