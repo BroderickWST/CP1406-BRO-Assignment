@@ -95,6 +95,8 @@ body {
     margin: 20px 0;
 }
 
+/*---- Jumbotron ----*/
+
 .jumbotron {
 	box-sizing: border-box;
 	background: #000 url(../images/jumboworldwide.jpg) center;
@@ -102,6 +104,9 @@ body {
 	height: 100%;
 	background-size: cover;
 	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 .jumbotron h1 {
@@ -116,11 +121,14 @@ body {
 	text-decoration: none;
 }
 
+/*---- hr ----*/
+
 .separator {
 	margin-left: 100px;
 	margin-right: 100px;
 }
 
+/*----- events pages -----*/
 
 .events {
 	background-color: #CCF3FF;
@@ -147,6 +155,7 @@ body {
 .pasteventslink a{
 	color: #FFFFFF;
 }
+
 /*
 .newsevents {
 	font-family: 'Montserrat', sans-serif;
