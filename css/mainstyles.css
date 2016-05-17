@@ -178,6 +178,9 @@ body {
 	color: #FFFFFF;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 /*
 .newsevents {
