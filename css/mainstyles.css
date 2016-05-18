@@ -62,6 +62,52 @@ div.panel.show {
 }
 
 
+/* -- specialguests */
+
+button.specialguests {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.specialguests.active, button.lifmember:hover {
+    background-color: #ddd;
+}
+
+button.specialguests.div.panel {
+    padding: 0 18px;
+    background-color: #CADBED;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+	width: 10%;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 600px;  
+}
+
+div.member {
+	float:left; 
+	width: 30%;
+}
+
+div.specialguests {
+	border-radius: 50%;
+}
+  .img-circle {
+        border-radius: 50%;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -95,8 +141,6 @@ body {
     margin: 20px 0;
 }
 
-/*---- Jumbotron ----*/
-
 .jumbotron {
 	box-sizing: border-box;
 	background: #000 url(../images/jumboworldwide.jpg) center;
@@ -104,9 +148,6 @@ body {
 	height: 100%;
 	background-size: cover;
 	overflow: hidden;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 10px;
 }
 
 .jumbotron h1 {
@@ -121,71 +162,216 @@ body {
 	text-decoration: none;
 }
 
-/*---- hr ----*/
-
 .separator {
 	margin-left: 100px;
 	margin-right: 100px;
 }
 
-/*----- events pages -----*/
 
 .events {
-	margin-top: -10px;
 	background-color: #CCF3FF;
+	border-radius: 25px;
 	margin: 0px 0px 0px px;
-	padding: 1px 30px 25px 30px;
-	font-family: Open Sans, sans-serif;
+	padding: 0px 30px 0px 30px;
 }
 
 .events h1 {
 	font-size: 22px;
 }
 
-.eventimgfloatright img {
-	box-sizing: border-box;
-	float: right;
-	margin: 10px;
-	width: 50%;
-	height: 50%;}
-
-.eventsbanner1 {
-	box-sizing: border-box;
-	background: #000 url(../images/eventbannertop.jpg) center;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	overflow: hidden;
-	padding-top: 90px;
-	margin-bottom: 0px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-.eventsbanner2 {
-	box-sizing: border-box;
-	background: #000 url(../images/eventbannerbottom.jpg) center;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	overflow: hidden;
-	padding-top: 80px;
-	margin-top: -15px;
-	margin-bottom: 90px;
-	border-radius: 0px 0px 25px 25px;
+.events br {
+	display: block;
+	margin: 10px 0px;
 }
 
 .pasteventslink {
 	text-align: center;
 	border-radius: 25px;
 	background-color: #80aeb7;
-	font-family: Open Sans, sans-serif;
 }
 
 .pasteventslink a{
 	color: #FFFFFF;
 }
+/* special guests *?
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url("../Desktop/BRO/css/mainstyles.css");
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
 }
 
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+
+
+
+/*
+.newsevents {
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.mission-statement p {
+	font-size: 27px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+    word-spacing: 1px;
+	line-height: 1.8;
+	text-align: center;
+	font-family: 'Cardo', serif;
+}
+
+.mission-statement {
+	margin-top: -10px;
+}
+
+.story img {
+	float: left;
+	margin: 10px 0px 0px 10px;
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+
+.story h4 {
+	position: absolute;
+	margin-left: 130px;
+	margin-bottom: 20px;
+	width: 70%;
+	min-width: 20px;
+}
+
+.story p{
+	position: absolute;
+	margin-right: 24px;
+	margin-left: 130px;
+	margin-top: 60px;
+	width: 80%;
+	min-width: 100px;
+}
+
+
+.story {
+	box-sizing: border-box;
+	margin: 0px 0px 10px 0px;
+	border-radius: 15px;
+	background-color: #ccf3ff;
+	padding-bottom: 130px;
+}
+*/
