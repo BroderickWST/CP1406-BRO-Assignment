@@ -108,21 +108,14 @@ body {
 
 .jumbotron p {
 	color: white;
-	margin-left: 100px;
 	text-shadow: 1px 1px 2px #000000;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .jumbotron h1 {
 	color: white;
-	margin-left: 100px;
 	text-shadow: 1px 1px 2px #000000;
 	font-family: 'Montserrat', sans-serif;
-}
-
-.jumbotron button {
-	margin-left: 100px;
-	margin-top: 10px;
 }
 
 .jumbotron a:link {
