@@ -59,6 +59,7 @@ div.panel {
 div.panel.show {
     opacity: 1;
     max-height: 600px;  
+    overflow-y: scroll;
 }
 
 
