@@ -89,36 +89,36 @@
     </ol>
 
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-2">
+        <div class="col-md-6 col-md-offset-2">
             <form role="form" data-toggle="validator">
                 <div class="form-group">
                     <h2>Membership Application NQ Ensembles Inc.</h2>
-                    <h4>Applying for a...</h4>
+                    <h4>Applying for a...*</h4>
                     <label class="radio-inline">
-                        <input type="radio" name="membership"
-                               value="renewal">Renewal Membership<br>
+                        <input type="radio" name="membership"value="renewal" required>Renewal Membership<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="membership" value="new">New Membership<br>
+                        <input type="radio" name="membership" value="new" required>New Membership<br>
                     </label>
+                    <div class="help-block with-errors"></div>
                 </div><!--div.form-group-->
 
 
                 <div class="form-group">
-                    <h3>Membership Type</h3>
+                    <h3>Membership Type*</h3>
                     <label class="radio-inline">
-                        <input type="radio" name="membershiptype"
-                               value="adult">Adult<br>
+                        <input type="radio" name="membershiptype" value="adult" required>Adult<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="membershiptype" value="fam">Family<br>
+                        <input type="radio" name="membershiptype" value="fam" required>Family<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="membershiptype" value="student">Student<br>
+                        <input type="radio" name="membershiptype" value="student" required>Student<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="membershiptype" value="concession">Concession<br>
+                        <input type="radio" name="membershiptype" value="concession" required>Concession<br>
                     </label>
+                    <div class="help-block with-errors"></div>
                 </div><!--div.form-group-->
 
 
@@ -143,11 +143,12 @@
                 </div><!--form group-->
                 <div class="form-group">
                     <label for="family">Family Name*:<br></label>
-                    <input class="form-control" type="text" id="family" placeholder="Family name" required><br>
+                    <input class="form-control" type="text" id="family" placeholder="Family name" required><div class="help-block with-errors"></div><br>
                 </div><!-- form group-->
                 <div class="form-group">
                     <label for="given">Given Names*:<br></label>
-                    <input class="form-control" type="text" id="given" placeholder="Given names" required><br>
+                    <input class="form-control" type="text" id="given" placeholder="Given names" required>
+                    <div class="help-block with-errors"></div><br>
                 </div><!--div.form-group-->
 
 
@@ -158,12 +159,12 @@
                     <label for="childone">First child:</label>
                     <input  class="form-control" type="text" id="childone" placeholder="First child's name"><br>
                     DOB: <input type="date" name="childonebday"><br><br>
-                </div>
+                </div><!--div.form-group-->
                 <div class="form-group">
                     <label for="childtwo">Second child:</label>
                     <input class="form-control" type="text" id="childtwo" placeholder="Second child's name"><br>
                     DOB: <input type="date" name="childtwobday"><br><br>
-                </div>
+                </div><!--div.form-group-->
                 <div class="form-group">
                     <label for="childthree">Third child:</label>
                     <input class="form-control" type="text" id="childthree" placeholder="Third child's name"><br>
@@ -172,24 +173,28 @@
 
 
                 <div class="form-group">
-                    <label for="address">Address:</label><br>
-                    <input class="form-control" type="text" id="address" placeholder="Enter address here" required><br>
+                    <label for="address">Address*:</label><br>
+                    <input class="form-control" type="text" id="address" placeholder="Enter address here" required>
+                    <div class="help-block with-errors"></div><br>
                 </div><!--div.form-group-->
                 <div class="form-group">
-                    <label for="pc">Postcode:</label><br>
-                    <input class="form-control" type="number" id="pc" placeholder="Enter postcode number here"><br>
+                    <label for="pc">Postcode*:</label><br>
+                    <input class="form-control" type="number" id="pc" placeholder="Enter postcode number here" required>
+                    <div class="help-block with-errors"></div><br>
                 </div><!--div.form-group-->
                 <div class="form-group">
-                    Phone number:<br>
-                    <input class="form-control" type="number" id="phone" placeholder="Enter phone number here"><br>
+                    <label for="phone">Phone number*:</label><br>
+                    <input class="form-control" type="number" id="phone" placeholder="Enter phone number here" required>
+                    <div class="help-block with-errors"></div><br>
                 </div><!--div.form-group-->
                 <div class="form-group">
-                    Mobile number:<br>
+                    <label for="mobile">Mobile number:</label><br>
                     <input class="form-control" type="number" id="mobile" placeholder="Enter mobile number here"><br>
                 </div><!--div.form-group-->
                 <div class="form-group">
-                    E-mail:<br>
-                    <input class="form-control" type="email" id="email" placeholder="Enter your email address here"><br>
+                    <label for="email">E-mail*:</label><br>
+                    <input class="form-control" type="email" id="email" placeholder="Enter your email address here" required>
+                    <div class="help-block with-errors"></div><br>
                 </div><!--div.form-group-->
 
 
@@ -205,9 +210,7 @@
                     <p>Concession available to persons in receipt of Centrelink pension card. Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
 
                     <h4>Payment</h4>
-
-
-
+                    <p>WORKING ON A COOL THING FOR THIS, please be patient, thank you.</p>
                 </div><!--div.form-group-->
 
 
@@ -235,30 +238,36 @@
                         <label class="checkbox">
                             <input type="checkbox" name="helporchestra" value="publish">Desktop publishing<br><br>
                         </label>
+                        <div class="help-block with-errors"></div>
                     </div><!--div.checkbox-->
                 </div><!--div.form-group-->
 
-                <div class="form-group">
+                
                     <h4>Play Registration</h4>
-                    Instrument/s played:<br>
-                    <input class="form-control" type="text" name="instrument" placeholder="Enter instrument here"><br>
-                    Qualifications:<br>
-                    <input class="form-control" type="text" name="instrument" placeholder="Enter instrument here"><br>
-                    Experience:<br>
-                    <textarea class="form-control"></textarea><br><br>
+                <div class="form-group">
+                    <label for="instrument">Instrument/s played:</label><br>
+                    <input class="form-control" type="text" id="instrument" placeholder="Enter instrument here"><br>
+                </div><!--div.form-group-->
+                <div class="form-group">
+                    <label for="qualifications">Qualifications:</label><br>
+                    <input class="form-control" type="text" id="qualifications" placeholder="Enter instrument here"><br>
+                </div><!--div.form-group-->
+                <div class="form-group">
+                    <label for="experience">Experience:</label><br>
+                    <textarea class="form-control" id="experience"></textarea><br><br>
                 </div><!--div.form-group-->
 
                 <input class="btn btn-default pull-right" type="submit" value="Submit">
 
             </form>
-        </div><!--div.col-lg-6-->
+        </div><!--div.col-md-6-->
 
         <div class="col-md-3">
             <h3>Info!</h3>
             <p><a href="events.html"><img src="images/draft-sidebar-events.png"></a></p>
             <p><a href="membership.html"><img src="images/draft-sidebar-member.png"></a></p>
             <p><a href="donate.html"><img src="images/draft-sidebar-donate.png"></a></p>
-        </div><!--div.col-lg-3-->
+        </div><!--div.col-,d-3-->
     </div><!--div.row-->
 </div><!--div.container-fluid-->
 
@@ -270,6 +279,7 @@
 
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
     <script src="js/card.js"></script>
 </body>
 </html>
