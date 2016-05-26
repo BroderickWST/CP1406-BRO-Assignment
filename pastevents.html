@@ -7,7 +7,7 @@
     <title>Past Events - Barrier Reef Orchestra</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mainstyles.css" rel="stylesheet">
+    <link href="css/pasteventscss.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Yesteryear|Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,24 +17,7 @@
     <![endif]-->
 </head>
 <body>
-
-<script language="JavaScript">
-function toggleText(contentId) {
-  var textNode = document.getElementById(contentId);
-
-  if (textNode.style.display == "none") {
-    textNode.style.display = "block";
-  } else {
-    textNode.style.display = "none";
-  }
-
-  var oldText = this.textContent;
-  this.textContent = this.getAttribute('data-alt');
-  this.setAttribute('data-alt', oldText);
-}
-</script>
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -44,7 +27,7 @@ function toggleText(contentId) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-				<img alt="Barrier Reef Orchestra" src="images/brologo.png" width="180" height="57">
+                <img alt="Barrier Reef Orchestra" src="images/brologo.png" width="180" height="57">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -76,89 +59,170 @@ function toggleText(contentId) {
                         <li><a href="orchestra.html">Rules and Repertoire</a></li>
                     </ul>
                 </li>
-                <li><a href="supporters.html">Supporters</a></li>
+                <li>
+                    <a href="supporters.html" class="dropdown-toggle"
+                       data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Supporters
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="donate.html">Donate to Us</a></li>
+                        <li><a href="supporters.html">Supporters</a></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
 <div class="jumbotron">
 <h1>Past Events</h1>
+<p>Last Updated: March 23rd, 2016</p>
 </div>
-
     <ol class="breadcrumb">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="pastevents.html">Past Events</a></li>
     </ol>
-
-<div class="container-fluid">
-<div class="row">
-    <div class="col-md-5 col-md-offset-1">
-    <br>
-        <div class="pasteventsbanner1"></div>
-            <div class="events">
-                <div class="eventimgcenter"><br>
-                    <img src="images/pastevents/DnD01.jpg" width="852" height="800" alt="Richard McIntyre"><br>
+	<div class="col-lg-2">
+    	<div class="eventnavigation">
+        	<h1><a href="#navbar">Navigation</a></h1>
+            <ul>
+            <li><a href="#dreamsanddances">Dreams and Dances</a></li>
+            <li><a href="#amusicalfeast">A Musical Feast</a></li>
+            <li><a href="#review-a-musical-feast">Review: A Musical Feast</a></li>
+            <li><a href="#review-twilight">Review: Twilight</a></li>
+            <li><a href="#world-music-concert">World Music Concert</a></li>
+            <li><a href="#review-world-music-concert">Review: World Music Concert</a></li>
+            <li><a href="#25th-anniversary">25th Anniversary Concert</a></li>
+            <li><a href="#review-25th-anniversary">Review: 25th Anniversary</a></li>
+            <li><a href="#sounds-of-romance">Sounds of Romance</a></li>
+            <li><a href="#last-nights-at-the-proms">Last Night At The Proms</a></li>
+            <li><a href="#masterworks">Masterworks</a></li>
+            <li><a href="#childrens-concert">Children's Concert</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<div class="col-lg-8">
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="dreamsanddances">
+                	<div class="eventtitle">
+        			<h1><strong>Dreams and Dances, conducted by</strong><br>Richard McIntyre</h1><br>
+                	</div>
                     </div>
-                    <h1><strong>As conducted by</strong><br>Richard McIntyre OAM, BMus (University of Sydney)</h1>
-                                <p class="eventtext" id="firsttext" style="display: none">
-                                <img src="images/pastevents/RickChrissyMaguire-2.jpg" width="242" height="320" alt="Richard McIntyre">
-                                Richard has maintained a long and distinguished career as bassoonist, music educator, conductor and arranger. A Composition graduate from Sydney University, he was appointed Associate Principal Bassoon with the Sydney Symphony Orchestra as a 20-year-old in 1968, moving to The Canberra School of Music as a foundation member of the Canberra Wind Soloists in 1978. With this renowned quintet, he recorded and toured internationally during a 30-year period, and gave it a unique repertoire with his virtuoso arrangements of large-scale orchestral works. He was for many years Principal Bassoon with the Australian Chamber Orchestra, and appeared on many occasions as guest Principal Bassoon with most of the Symphony Australia Orchestras - also as concerto soloist, and independently as a recitalist. His continuing work as Principal Bassoon with the Canberra Symphony Orchestra dates back to student days of 1965 - 67. If you'd like to hear some of his work as bassoonist, chamber musician, and arranger, you'll find it on YouTube under Canberra Wind Soloists. <br><br>
-                                
-                                Simultaneously, he has sustained a career as one of Australia's most respected bassoon teachers, at all levels from beginner to post-graduate and professional. In addition he has worked tirelessly in the development of orchestral and ensemble skills with students of all instruments, particularly at the advanced tertiary level. He was for many years a regular tutor and conductor at the Australian Youth Orchestra's National Music Camps. He has taught over many years in south-east Asia. <br><br>
-                                
-                                His work as a conductor is well-known, particularly in Canberra. He was Conductor and Musical Director of the Canberra Youth Orchestra from 1980 - 1990, greatly broadening its repertoire and general endeavour, and led it on three highly-successful and widely-acclaimed European tours. His Canberra contribution has included development of and much work with the School of Music Orchestra, Canberra Opera, Canberra Philharmonic Society, thirteen-years as Musical Director of The Llewellyn Choir (with development of its accompanying professional ensemble, The Canberra Chamber Orchestra), and three years as Musical Director of The Oriana Chorale. <br><br>
-                                
-                                His numerous conducting activities outside of Canberra have included the foundation and development of the Barrier Reef Orchestra, with which he continues his association as Artistic Advisor and frequent conductor.<br><br>
-                                
-                                His 35-year career at the Canberra (now ANU) School of Music played a significant part in the creation of its erstwhile international reputation. Awards have included 1986 Canberran of the Year, Advance Australia, Sounds Australian, and National Critics' Circle awards. In 1992 he was granted an Order of Australia Medal, for services to Music and Music Education, particularly for his work with the Canberra Youth Orchestra. In 2013, he was elected President of the Australian Double Reed Society.<br><br>
-</p><!-- Missing buy tickets -->
-<div class="eventbuttons">
-  	<button class="eventbutton" data-alt="hide text" onClick="toggleText.call(this, 'firsttext')">Read More</button></div>
-</div>
-<div class="pasteventsbanner2"></div>
-</div>
+                    <br>
+                <div class="scrollbar">
+                <p>Richard has maintained a long and distinguished career as bassoonist, music educator, conductor and arranger. A Composition graduate from Sydney University, he was appointed Associate Principal Bassoon with the Sydney Symphony Orchestra as a 20-year-old in 1968, moving to The Canberra School of Music as a foundation member of the Canberra Wind Soloists in 1978. With this renowned quintet, he recorded and toured internationally during a 30-year period, and gave it a unique repertoire with his virtuoso arrangements of large-scale orchestral works. He was for many years Principal Bassoon with the Australian Chamber Orchestra, and appeared on many occasions as guest Principal Bassoon with most of the Symphony Australia Orchestras - also as concerto soloist, and independently as a recitalist. His continuing work as Principal Bassoon with the Canberra Symphony Orchestra dates back to student days of 1965 - 67. If you'd like to hear some of his work as bassoonist, chamber musician, and arranger, you'll find it on YouTube under Canberra Wind Soloists.<br><br>
 
+Simultaneously, he has sustained a career as one of Australia's most respected bassoon teachers, at all levels from beginner to post-graduate and professional. In addition he has worked tirelessly in the development of orchestral and ensemble skills with students of all instruments, particularly at the advanced tertiary level. He was for many years a regular tutor and conductor at the Australian Youth Orchestra's National Music Camps. He has taught over many years in south-east Asia.<br><br>
 
+His work as a conductor is well-known, particularly in Canberra. He was Conductor and Musical Director of the Canberra Youth Orchestra from 1980 - 1990, greatly broadening its repertoire and general endeavour, and led it on three highly-successful and widely-acclaimed European tours. His Canberra contribution has included development of and much work with the School of Music Orchestra, Canberra Opera, Canberra Philharmonic Society, thirteen-years as Musical Director of The Llewellyn Choir (with development of its accompanying professional ensemble, The Canberra Chamber Orchestra), and three years as Musical Director of The Oriana Chorale.<br><br>
 
-<div class="col-md-5 col-md-offset-0">
-    <br>
-        <div class="pasteventsbanner1"></div>
-            <div class="events">
-                <div class="eventimgcenter"><br>
-                    <img src="images/pastevents/MusicalFeast2015.jpg" width="400" height="420" alt="A Musical Feast 2015"><br>
+His numerous conducting activities outside of Canberra have included the foundation and development of the Barrier Reef Orchestra, with which he continues his association as Artistic Advisor and frequent conductor.<br><br>
+
+His 35-year career at the Canberra (now ANU) School of Music played a significant part in the creation of its erstwhile international reputation. Awards have included 1986 Canberran of the Year, Advance Australia, Sounds Australian, and National Critics' Circle awards. In 1992 he was granted an Order of Australia Medal, for services to Music and Music Education, particularly for his work with the Canberra Youth Orchestra. In 2013, he was elected President of the Australian Double Reed Society.<br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+            		<a href="images/pastevents/DnD01.jpg"><img src="images/pastevents/DnD01.jpg" width="426" height="400" alt="Dreams and Dances poster"></a>
                     </div>
-                    <h1><strong>As conducted by</strong><br>Mark Shiell</h1>
-                                <p class="eventtext" id="secondtext" style="display: none">
-                                <img src="images/pastevents/markconducting.jpg" width="320" height="214" alt="Mark Shiell">
-                                Mark has guest-conducted ensembles including the Melbourne Symphony Orchestra, West Australian Symphony, Moscow Symphony Orchestra, State Academic Symphony Orchestra of St. Petersburg, Victorian Opera, Orchestra Ensemble Kanazawa, Canberra Symphony Orchestra, Sydney Sinfonia, Melbourne Youth Orchestra, University of Melbourne Symphony Orchestra and the Orchestras of the State Music Camps in Melbourne and Adelaide.<br><br>
+                    <div class="col-lg-6">
+                	<a href="images/pastevents/RickChrissyMaguire-2.jpg"><img src="images/pastevents/RickChrissyMaguire-2.jpg" width="242" height="320" alt="Richard McIntyre"></a>
+                	</div>
+                </div>
+                <div class="col-lg-12">
+                	<a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">
+                	<div class="eventtickets">
+                	<div class="container-fluid">
+                            <div class="col-lg-4">
+                            <img src="images/pastevents/TShop300web.jpg" width="300" height="55" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                            <p><strong>Tickets on sale now! Click this box to book!</strong> - 7:30pm 7th November @ Townsville Civic Theatre</p>
+                            <p>$38 Adult - $34 Concession - $15 Child/Student - $32 NQE Member</p>
+                            <p>Cards accepted as concession price tickets - Pension, Tertiary Students Full-time and Senior cards.</p>
+                    	</div>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="amusicalfeast">
+                	<div class="eventtitle">
+        			<h1><strong>A Musical Feast, conducted by</strong><br>Mark Shiell</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>Mark has guest-conducted ensembles including the Melbourne Symphony Orchestra, West Australian Symphony, Moscow Symphony Orchestra, State Academic Symphony Orchestra of St. Petersburg, Victorian Opera, Orchestra Ensemble Kanazawa, Canberra Symphony Orchestra, Sydney Sinfonia, Melbourne Youth Orchestra, University of Melbourne Symphony Orchestra and the Orchestras of the State Music Camps in Melbourne and Adelaide.<br><br>
                                 
 Currently he serves as Artistic Director and Principal Conductor of Zelman Symphony Orchestra, the Ballarat Symphony and the Macquarie Philharmonia.<br><br>
 
 His love of community and youth music has kept him busy contributing to the growth and development of important initiatives in both of these areas here in Australia. Most recently, Mark developed a Regional Orchestra Weekend for ensembles from across Victoria to meet and perform together, with the aim to make this an annual event.<br><br>
 
-Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015.</p>
-<div class="eventbuttons">
-  	<button class="eventbutton" data-alt="hide text" onClick="toggleText.call(this, 'secondtext')">Read More</button> <!-- Missing buy tickets --></div>
- 			</div>
-    <div class="pasteventsbanner2"></div>
-</div>
-</div>
-
-<div class="row">
-    <div class="col-md-5 col-md-offset-1">
+Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015.<br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+            		<a href="images/pastevents/MusicalFeast2015.jpg"><img src="images/pastevents/MusicalFeast2015.jpg" width="400" height="420" alt="A Musical Feast poster"></a>
+                    </div>
+                    <div class="col-lg-6">
+                	<a href="images/pastevents/markconducting.jpg"><img src="images/pastevents/markconducting.jpg" width="320" height="214" alt="Mark Shiell"></a>
+                	</div>
+                </div>
+                <div class="col-lg-12">
+                	<a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">
+                	<div class="eventtickets">
+                	<div class="container-fluid">
+                            <div class="col-lg-4">
+                            <img src="images/pastevents/TShop300web.jpg" width="300" height="55" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                            <p><strong>Tickets on sale now! Click this box to book!</strong> - 7:30pm 7th November @ Townsville Civic Theatre</p>
+                            <p>$38 Adult - $34 Concession - $15 Child/Student - $32 NQE Member</p>
+                            <p>Cards accepted as concession price tickets - Pension, Tertiary Students Full-time and Senior cards.</p>
+                    	</div>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
     <br>
-        <div class="pasteventsbanner1"></div>
-            <div class="events">
-                <h1><strong>REVIEW</strong><br>A Music Feast, by LGM</h1>
-A musical feast was somewhat of a fabulous dinner dance with four lively dances of the Slavonic and Hungarian kind included.<br><br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-12">
+                	<div id="review-a-musical-feast">
+                	<div class="eventtitle">
+        			<h1><strong>REVIEW - A Musical Feast</strong><br>by LGM</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>A musical feast was somewhat of a fabulous dinner dance with four lively dances of the Slavonic and Hungarian kind included.<br><br>
 
-The opening Slavonic Dances Numbers 1 and 8 by Anton Dvorak were an indication of the feast to follow. The rhythm and exuberance was conveyed so well we didn’t need to actually see the dancers performing those tricky steps. Brahms Hungarian dances which lead the second part of the program were similarly very lively and invigorating; Brahms used folk songs extensively in these pieces and while being no expert I felt quite a bit of gypsy music infiltrated them.<br>
-<p class="eventtext" id="thirdtext" style="display: none">
-<br>
+The opening Slavonic Dances Numbers 1 and 8 by Anton Dvorak were an indication of the feast to follow. The rhythm and exuberance was conveyed so well we didn’t need to actually see the dancers performing those tricky steps. Brahms Hungarian dances which lead the second part of the program were similarly very lively and invigorating; Brahms used folk songs extensively in these pieces and while being no expert I felt quite a bit of gypsy music infiltrated them.<br><br>
+
 N.S.W Soprano, Julie O’Connor sang four of the most beautiful songs in the repertoire. Her voice was pure and very versatile in the range of notes required. She also had the best facial and hand gestures I have seen which really enhances the enjoyment of the music. Many singers, whilst having a great voice, tend to be wooden in gesture and stance. The Orchestra was very much part of the song, never intruding but always asserting its contribution to the overall beauty of the music.<br><br>
 
 In this 150 anniversary year of Sibelius Finlandia was a joy to hear again. This became Finland’s unofficial anthem during the independence war against Russia (played under a variety of names so as to not to antagonise the aggressors) in the 1890’s and is very stirring.<br><br>
@@ -171,49 +235,379 @@ For me the piece de resistance of the concert was Rossini’s William Tell Overt
 
 For that little bit of extra chocolate we were treated to a repeat of the Hungarian Dance No 5.<br><br>
 
-So Bravo Mark, Bravo Musicians, Bravo everyone who contributed - as I say after almost every concert – This has been the best concert yet.<br><br></p>
-<div class="eventbuttons">
-  	<button class="eventbutton" data-alt="hide text" onClick="toggleText.call(this, 'thirdtext')">Read More</button></div>
-</div>
-<div class="pasteventsbanner2"></div>
-</div>
-
-
-
-<div class="col-md-5 col-md-offset-0">
+So Bravo Mark, Bravo Musicians, Bravo everyone who contributed - as I say after almost every concert – This has been the best concert yet.<br></p>
+                </div>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
     <br>
-        <div class="pasteventsbanner1"></div>
-            <div class="events">
-                    <h1><strong>REVIEW</strong><br>Twilight, by Judy Hunter</h1>
-                                Twilight was a community project to mark the 30th birthday of Dance North. The theme of the performance was sensing sea, sky and earth through connection with place. It involved over 150 performers over more than 14 locations on the beautiful headland at Jezzine. It was a performance in motion with the audience moving from one location to the next shepherded by volunteer guides.<br><br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="review-twilight">
+                	<div class="eventtitle">
+        			<h1><strong>REVIEW - Twilight</strong><br>by Judy Hunter, photos by Gai Copeman</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>Twilight was a community project to mark the 30th birthday of Dance North. The theme of the performance was sensing sea, sky and earth through connection with place. It involved over 150 performers over more than 14 locations on the beautiful headland at Jezzine. It was a performance in motion with the audience moving from one location to the next shepherded by volunteer guides.<br><br>
 
 The performance began before sunset and continued while the sun went down and the horizon changed colour. The later stations were lit by candles and lighting concealed in the vegetation.
-<br>
-<p class="eventtext" id="fourthtext" style="display: none">
-<br>
-<img src="images/pastevents/Twilight01.jpg" width="193" height="310" alt="">
+<br><br>
 World Music concert Performances ranged from the Brass members of the Barrier Reef Orchestra who could be found at several stations, through school dance students, to the Forever Young over 60s. It included Aboriginal and Torres Strait Islander dance and music groups, Kith and Kin, Aquapella, who had just returned from a successful tour to Europe, WASSA, our African drummers and Teepee Parkour who leapt over walls and stairs and were accompanied by Boris doing amazing stunts of his lit up bicycle.
 In perhaps a first for Townsville one section of the show involved a mobile phone orchestra. The audience were encouraged to download an app on which original music had been recorded and the audience played this on their phones to accompany a recorder solo.<br><br>
 
-The finale was with the dancers from Dance North and the BRO Brass playing original music composed by the Musical Director, Ng Chor Guan from Malaysia. Guan had composed almost all the music for the production. The overall Artistic and Creative Direction was in the hands of Cheryl Stock AM who was the founding Artistic Director of Dance North from 1985 to 1996.<br><br></p>
-
-
-<div class="eventbuttons">
-  	<button class="eventbutton" data-alt="hide text" onClick="toggleText.call(this, 'fourthtext')">Read More</button> <!-- Missing buy tickets --></div>
- 			</div>
-    <div class="pasteventsbanner2"></div>
-</div>
-</div>
-
-</div>
-
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Barrier Reef Orchestra | <a href="index.html">Home</a> | <a href="events.html">Events</a> | <a href="membership.html">Join Us!</a></p>
+The finale was with the dancers from Dance North and the BRO Brass playing original music composed by the Musical Director, Ng Chor Guan from Malaysia. Guan had composed almost all the music for the production. The overall Artistic and Creative Direction was in the hands of Cheryl Stock AM who was the founding Artistic Director of Dance North from 1985 to 1996.<br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-3">
+            		<a href="images/pastevents/Twilight01.jpg"><img src="images/pastevents/Twilight01.jpg" width="193" height="310" alt="French Horn"></a>
+                    </div><br><br>
+                    <div class="col-lg-3">
+					<a href="images/pastevents/Twilight03.jpg"><img src="images/pastevents/Twilight03.jpg" width="216" height="217" alt="Trumpet"></a>
+                    </div>
+                    <div class="col-lg-6">
+                	<a href="images/pastevents/Twilight02.jpg"><img src="images/pastevents/Twilight02.jpg" width="284" height="206" alt="Tuba"></a>
+                	</div>
+                </div>
+        	</div>
+		</div>
     </div>
-</footer>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="world-music-concert">
+                	<div class="eventtitle">
+        			<h1><strong>World Music Concert</strong></h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>As you travel the globe one of the standout features of so many different countries is undoubtedly their music. This concert saves on the shoe leather and brings an eclectic mix of music from all over the world to Townsville. A unique performance conceptualised and developed here in Townsville by the Barrier Reef Orchestra highlighting the stunning diversity of cultural music from around the globe. Featuring the Orchestra and several international artists performing music from Asia, the Americas, the British Isles, Europe and of course Australia. So pack away the passport take the trip of a life time and never leave home. Join Townsville’s very own Barrier Reef Orchestra in their 15th year for a World Music Concert.<br>
+                </p>
+                <h2>Special Guests</h2>
+                <h3><a href="specialguests.html">Adam Lopez</a></h3>
+                <p>Developed his multi-octave voice while studying opera in Australia</p>
+                <h3><a href="specialguests.html">Domenico Taraborrelli</a></h3>
+                <p>One of Brisbane’s most experienced and versatile multicultural entertainers</p>
+                <h3><a href="specialguests.html">David Hudson</a></h3>
+                <p>Musician, entertainer, artist and actor</p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-3">
+            		<a href="images/2Adam-Lopez.jpg"><img src="images/2Adam-Lopez.jpg" width="225" height="225" alt="Adam Lopez"></a>
+                    </div><br><br>
+                    <div class="col-lg-3">
+				   <a href="images/3Domenico-Taraborrelli.jpg"><img src="images/3Domenico-Taraborrelli.jpg" width="200" height="200" alt="Demnico Taraborrelli"></a>
+                    </div>
+                    <div class="col-lg-6">
+                	<a href="images/4David-Hudson.jpg"><img src="images/4David-Hudson.jpg" width="245" height="250" alt="David Hudson"></a>
+                	</div>
+                </div>
+        	    <div class="col-lg-12">
+                	<a href="https://whatson.townsville.qld.gov.au/categories/ticketshop">
+                	<div class="eventtickets">
+                	<div class="container-fluid">
+                            <div class="col-lg-4">
+                            <img src="images/pastevents/TShop300web.jpg" width="300" height="55" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                            <p><strong>Tickets on sale now! Click this box to book!</strong> - 7:30pm 7th November @ Townsville Civic Theatre</p>
+                            <p>$38 Adult - $34 Concession - $15 Child/Student - $32 NQE Member</p>
+                            <p>Cards accepted as concession price tickets - Pension, Tertiary Students Full-time and Senior cards.</p>
+                    	</div>
+                    </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-12">
+                	<div id="review-world-music-concert">
+                	<div class="eventtitle">
+        			<h1><strong>REVIEW - World Music Concert</strong><br>by Helen Land</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>Presented by Townsville City Council and AFCM<br>
+                Free Public Event<br>
+                Hosted by Damien Beaumont ABC Classic FM <br><br>
+                
+                Copland Fanfare for the Common Man<br>
+                Conducted by Andrew Ryder<br>
+                Barrier Reef Orchestra, 1RAR Band, Ben Jacks<br><br>
+                
+                Walton Crown Imperial<br>
+                Conducted by Andrew Ryder<br>
+                Barrier Reef Orchestra<br> 
+                
+                The performance delighted more than one sense through the visual backdrop showing scenery pertinent to the music and the amazing musical sound evoking toe tapping, clapping, 					singing and sheer enjoyment.<br><br>
+                
+                The world tour began with David Hudson on didgeridoo, guitar and vocals synchronizing with the visual backdrop to grab the audiences’ attention, performing the popular John 		Williamson ballad Raining on the Rock. The tour continued through Korea and Cuba courtesy of a quality Barrier Reef Orchestral performance. Next, virtuosic Domenico Taraborrelli on piano accordion and vocalist Adam Lopez, supported by the Orchestra, engaged the audience with Latin American pieces. Unfortunately the balance was a little off, with the soloists being much louder.<br><br>
+                
+                The second half began with the Barrier Reef Orchestra creating an American theme through Aaron Copland before heading off to Europe with the Orchestra supporting Domenico once again in Italy, John Ferguson on bagpipes with vocalist Cynthia Clark in Scotland and Adam Lopez in Spain.<br><br>
+                
+                The tour aptly returned to Australia with all the soloists returning to the stage to present a rousing and emotive performance of I am Australian.<br><br>
+                
+                This very enjoyable performance once again demonstrated the talented people choosing to live in Townsville and able to produce such a high class production, equal to anywhere. This was reinforced by the willingness of quality professional musicians to come to Townsville and perform with the Barrier Reef Orchestra. I feel certain if more was known about the concert the Civic Theatre would easily have been at capacity.<br></p>
+                </div>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="25th-anniversary">
+                	<div class="eventtitle">
+        			<h1><strong>25th Anniversary Celebration Concert - The 1812!</strong><br>August 2nd, Queen's Gardens, 3:00 PM</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>Presented by Townsville City Council and AFCM<br>
+                Free Public Event<br>
+                Hosted by Damien Beaumont ABC Classic FM <br><br>
+                
+                <strong>Copland</strong> <i>Fanfare for the Common Man</i><br>
+                Conducted by Andrew Ryder<br>
+                Barrier Reef Orchestra, 1RAR Band, Ben Jacks<br><br>
+                
+                <strong>Walton</strong> <i>Crown Imperial</i><br>
+                Conducted by Andrew Ryder<br>
+                Barrier Reef Orchestra<br> 
+                
+                <strong>Grieg</strong> <i>Prelude from Holberg Suite</i><br>
+                Camerata of St John's<br><br>
+                
+                <strong>Jerome Kern</strong> <i>Smoke Gets in your Eyes</i><br>
+                Amy Dickson, Camerata of St John’s<br><br>
+                
+                <strong>Leroy Anderson</strong> <i>Plink, Plank, Plunk</i><br>
+                Camerata of St John's<br><br>
+                
+                <strong>Henry Mancini</strong> <i>Moon River</i><br>
+                Amy Dickson, Camerata of St John's<br><br>
+                
+                <strong>Trad (Roumanian) arr. Michael Patterson</strong> <i>Breaza (a la camerata)</i><br>
+                Camerata of St John's<br><br>
+                
+                <strong>Jack Pettis/Billy Meyers/Elmer Schoebel</strong> <i>Bugle Call Rag</i><br>
+                <strong>María Grever/Stanley Adams</strong> <i>What A Difference A Day Makes</i><br>
+                <strong>Peggy Lee/Bill Schluger</strong> <i>I Love Being Here With You</i><br>
+                <strong>Joe Garland/Andy Razaf arr. Glenn Miller</strong> <i>In The Mood</i><br>
+                Conducted by Major Lindsay Mee<br>
+                1RAR Band<br><br>
+                
+                <strong>Giacomo PUCCINI (1858-1924)</strong> <i>Gianni Schicchi: O mio babbino caro</i><br><br>
+                
+                <strong>Antonín DVOŘÁK (1841-1904)</strong> <i>Rusalka: Song to the Moon</i><br>
+                Conducted by Andrew Ryder<br>
+                Cheryl Barker, Barrier Reef Orchestra<br><br>
+                
+                <strong>Tchaikovsky</strong> <i>1812 Overture Op.49</i><br>
+                Audience participation instead of cannon fire!<br>
+                Conducted by Andrew Ryder<br>
+                Barrier Reef Orchestra, 1RAR Band<br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+            		<br><br><br><br><a href="images/pastevents/last_night_of_the_proms_bro_dsc0562.jpg"><img src="images/pastevents/last_night_of_the_proms_bro_dsc0562.jpg" width="408" 			height="500" alt="Conducter"></a>
+                	</div>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="review-25th-anniversary">
+                	<div class="eventtitle">
+        			<h1><strong>REVIEW</strong><br>AFCM 25th Anniversary Celebration Concert<br>by Helen Land</h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="scrollbar">
+                <p>A very pleasant Sunday afternoon in Queens Gardens was attended by approximately three and half thousand satisfied music lovers. This free concert organised to celebrate the 25th Anniversary of the AFCM was also a fitting opportunity for BRO to celebrate its 15th Anniversary with it’s first ever outdoor public performance.<br><br>
 
+The tastes of all music lovers was satiated. The concert opened with the ceremonial and pompous Brass composition by Aaron Copland titled Fanfare for the Common Man, followed by the equally ceremonial Imperial March by William Walton. Genuine fun and musical camaraderie emanated from the performance by Camerata of St Johns with their virtuosic classical performance. In addition they ably accompanied Amy Dickson in her flawless saxophone performance with her distinctive tone clearly displaying the reason she is sought after around the world.<br><br>
+
+1RAR Big Band played to the high standard Townsville audiences are familiar. They had the audience tapping their feet to their musical and vocal compositions. Cheryl Barker’s powerful soprano rang across the park and most likely was heard on Castle Hill as she sang two arias accompanied by BRO and conducted by UK conductor Nicholas Daniel.<br><br>
+
+The finale of the afternoon which included musicians from all three ensembles was the 1812 Overture. It was delightful to see the audience enthusiastically participate in this finale. This pleasant afternoon can only be rated as a huge success and may prove to be the first of many performances in years to come.<br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+            		<a href="images/pastevents/BROsept14.jpg"><img src="images/pastevents/BROsept14.jpg" width="560" height="689" alt="25th anniversary of the orchestra"></a>
+                </div>
+              </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="sounds-of-romance">
+                	<div class="eventtitle">
+        			<h1><strong>Sounds of Romance</strong></h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="smallscrollbar">
+                <p>Featuring<br><br>
+                Tchaikovsky: Waltz of the Flowers from Nutcracker<br>
+                Chaminade Concertino<br>
+                Mozart: Flute and Harp Concerto -Andantino (2nd Movt)<br>
+                Bizet: L'arlesienne Suites (excerpts)<br>
+                Suite 1: Prelude, Menuet<br>
+                Tchaikovsky Symphony no 2 "Little Russia"<br><br> 
+                
+                Conductor: <strong><a href="specialguests.html">Raymond Yong</a></strong><br><br>
+                
+                Flute: <strong><a href="specialguests.html">Jennifer Bradstreet</a></strong> (2014 ACVC winner)<br><br>
+                
+                Harp: <strong><a href="specialguests.html">Leah Li</a></strong>
+                <br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+            		<br><br><br>
+                    <a href="images/pastevents/sor200.jpg"><img src="images/pastevents/sor200.jpg" width="279" height="200" alt="Sounds of Romance poster"></a>
+                </div>
+              </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="last-nights-at-the-proms">
+                	<div class="eventtitle">
+        			<h1><strong>Last Night at the Proms</strong></h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="smallscrollbar">
+                <p>Featuring <strong>The Company Singers</strong><br><br>
+                
+                Arranged and Conducted by <strong>Richard McIntyre</strong><br><br>
+                
+                <strong>Saturday, 1st November 2014</strong><br>
+                at Townsville Civic Theatre
+                <br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-6">
+                    <a href="images/pastevents/LNAPtitle500.jpg"><img src="images/pastevents/LNAPtitle500.jpg" width="400" height="382" alt="Last Night at the Proms poster"></a>
+                </div>
+              </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-6">
+                	<div id="masterworks">
+                	<div class="eventtitle">
+        			<h1><strong>Masterwork</strong></h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="smallscrollbar">
+                <p><strong>Masterworks<br>
+                Tchaikosvky: Symphony No. 5
+                Grieg Piano Concerto</strong><br>
+                Conductor: <strong>Mark Shiell</strong><br>
+                Soloist: <strong>Stefan Cassomenos</strong><br>
+                (2013 Australian Concerto and Vocal Competition runner-up)
+                Concert Partner: <strong>Australian Concerto and Vocal Competition</strong><br><br>
+
+                <strong>Saturday, 6th September, 7.30pm Townsville Civic Theatre<br><br>
+                Sunday, 7th September, 2.00pm Burdekin Theatre, Ayr</strong>
+                <br></p>
+                </div>
+                </div>
+            	<div class="imagealign">
+                	<div class="col-lg-3">
+            		<a href="images/pastevents/MarkShiel01.jpg"><img src="images/pastevents/MarkShiel01.jpg" width="272" height="300" alt="Mark Shiel"></a>
+                    </div>
+                    <div class="col-lg-3">
+                	<a href="images/pastevents/StefanCassomenos01.jpg"><img src="images/pastevents/StefanCassomenos01.jpg" width="272" height="300" alt="Stefan Cassomenos"></a>
+                	</div>
+                </div>
+        	</div>
+		</div>
+    </div>
+    
+    <br>
+    
+    <div class="pastevent">
+   	  <div class="container-fluid">
+		<div class="row"><br>
+            	<div class="col-lg-12">
+                	<div id="childrens-concert">
+                	<div class="eventtitle">
+        			<h1><strong>Children's Concert</strong></h1><br>
+                	</div>
+                    </div>
+                    <br>
+                <div class="smallscrollbar">
+                <p>featuring<br>
+                <strong>Peter and the Wolf</strong><br>
+                and<br>
+                <strong>Music from Harry Potter<br><br>
+                Sunday, 15th June 1pm and 3pm at Riverway Arts Centre</strong>
+                <br></p>
+                </div>
+                </div>
+        	</div>
+		</div>
+    </div>
+    <br><br><br><br>
+</div>
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/card.js"></script>
