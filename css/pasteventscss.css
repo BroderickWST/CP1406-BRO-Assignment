@@ -1,0 +1,555 @@
+.navbar-default {
+	background-color: transparent;
+	border: none;
+	padding-bottom: 30px;
+	background-image: url(../images/header-background.jpg);	
+	background-repeat: repeat-x;
+}
+
+.navbar-default .navbar-nav .active a {
+    background-color: transparent;
+    color: #E0405C;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.benefactors {
+    text-align: center;
+}
+
+.donatebutton {
+    float: right;
+}
+
+.col-center {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*     accordion dropdown menu */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 600px;  
+    overflow-y: scroll;
+}
+
+
+/* -- specialguests */
+
+button.specialguests {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.specialguests.active, button.lifmember:hover {
+    background-color: #ddd;
+}
+
+button.specialguests.div.panel {
+    padding: 0 18px;
+    background-color: #CADBED;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+	width: 10%;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 600px;  
+}
+
+div.member {
+	float:left; 
+	width: 30%;
+}
+
+div.specialguests {
+	border-radius: 50%;
+}
+  .img-circle {
+        border-radius: 50%;
+}
+
+/*div.people {
+	 width:75%;
+	 padding: 25px; 
+	 float: right;
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+/*---- Jumbotron ----*/
+
+.jumbotron {
+	box-sizing: border-box;
+	background: #000 url(../images/jumboworldwide.jpg) center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+.jumbotron h1 {
+	color: white;
+	text-shadow: 2px 2px 3px #000000;
+	font-family: 'Yesteryear', sans-serif;
+	text-align: center;
+}
+
+.jumbotron p {
+	color: white;
+	text-shadow: 2px 2px 3px #000000;
+	font-family: 'Yesteryear', sans-serif;
+	text-align: center;
+}
+
+.jumbotron a:link {
+	color: white;
+	text-decoration: none;
+}
+
+/*---- hr ----*/
+
+.separator {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/*----- events pages -----*/
+
+.events {
+	background-color: #CCF3FF;
+	padding: 1px 30px 25px 30px;
+	line-height: 1.5;
+	font-family: Open Sans, sans-serif;
+}
+
+.events h1 {
+	font-size: 22px;
+}
+
+.events h2 {
+	font-size: 18px;
+}
+
+.eventimgfloatright {
+	box-sizing: border-box;
+	float: right;
+	margin: 10px;
+	max-height: 400px;
+	border-radius: 30px;
+}
+
+.eventimgfloatleft img {
+	box-sizing: border-box;
+	float: left;
+	margin: 10px;
+	max-width: 400px;
+	border-radius: 30px;
+}
+
+.eventsbanner1 {
+	box-sizing: border-box;
+	background: #000 url(../images/eventbannertop.jpg) center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 90px;
+	margin-bottom: -10px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.eventsbanner2 {
+	box-sizing: border-box;
+	background: #000 url(../images/eventbannerbottom.jpg) center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 80px;
+	margin-top: -15px;
+	margin-bottom: 90px;
+	border-radius: 0px 0px 25px 25px;
+}
+
+.pasteventslink {
+	text-align: center;
+	border-radius: 25px;
+	background-color: #80aeb7;
+	font-family: Open Sans, sans-serif;
+}
+
+.pasteventslink a{
+	color: #FFFFFF;
+}
+
+/* past events */
+
+.pastevent {
+	background-color: #dcf7ff;
+	padding: 10px 10px 10px 10px;
+	line-height: 1.5;
+	font-family: Open Sans, sans-serif;
+	border-radius: 25px;
+}
+
+.pastevent:hover {
+        box-shadow: inset 0 0 0 5px #53a7ea; /*color*/
+		transition:all 0.3s ease;
+}
+
+.pastevent h1 {
+	font-size: 27px;
+	text-align: center;
+}
+
+.eventnavigation {
+	background-color: #ffffff;
+	position: fixed;
+	font-family: Yesteryear, san-serif;
+	color: #048bca;
+}
+
+.eventnavigation h1{
+	margin-left: 45px;
+}
+
+.eventnavigation ul{
+	list-style-type: decimal;
+	color: #000000;
+	background-color: #ffffff;
+	font-style: #8ce4ff;
+	font-family: Open Sans, san-serif;
+}
+
+.imagealign {
+	text-align: center;
+}
+
+.imagealign img{
+	border-radius: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	max-width: 100%;
+	height: auto;
+	background-color: #8ce4ff;
+}
+
+.imagealign img:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+		transition:all 0.3s ease;
+}
+
+.scrollbar {
+	height: 530px;
+	overflow-y: scroll;
+	padding: 10px;
+	background-color: #fafafa;
+	border-radius: 25px 0px 0px 0px;
+	margin-left: 20px;
+}
+
+.smallscrollbar {
+	height: 230px;
+	overflow-y: scroll;
+	padding: 10px;
+	background-color: #fafafa;
+	border-radius: 25px 0px 0px 0px;
+	margin-left: 20px;
+}
+
+.eventtickets {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 0px 10px 10px 10px;
+	background-color: #ffffff;
+	line-height: 1.0;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.eventtickets img {
+	max-width: 100%;
+	height: auto;
+}
+
+.eventtitle {
+	border: 4px #048BCA dashed;
+	border-radius: 20px;
+	background-color: #8ce4ff;
+	margin-left: 20px;
+}
+
+/*
+.eventtitle:hover {
+        box-shadow:
+                2px 2px 5px #53a7ea,
+                3px 3px 5px #53a7ea,
+                4px 4px 5px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+		transition:all 0.3s ease;
+}
+*/
+
+/* special guests *?
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url("../Desktop/BRO/css/mainstyles.css");
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+}
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+}
+
+
+
+/*
+.newsevents {
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.mission-statement p {
+	font-size: 27px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+    word-spacing: 1px;
+	line-height: 1.8;
+	text-align: center;
+	font-family: 'Cardo', serif;
+}
+
+.mission-statement {
+	margin-top: -10px;
+}
+
+.story img {
+	float: left;
+	margin: 10px 0px 0px 10px;
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+
+.story h4 {
+	position: absolute;
+	margin-left: 130px;
+	margin-bottom: 20px;
+	width: 70%;
+	min-width: 20px;
+}
+
+.story p{
+	position: absolute;
+	margin-right: 24px;
+	margin-left: 130px;
+	margin-top: 60px;
+	width: 80%;
+	min-width: 100px;
+}
+
+
+.story {
+	box-sizing: border-box;
+	margin: 0px 0px 10px 0px;
+	border-radius: 15px;
+	background-color: #ccf3ff;
+	padding-bottom: 130px;
+}
+*/
