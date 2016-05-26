@@ -87,10 +87,8 @@ body {
 /* Not required for template or sticky footer method. */
 
 .container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
 }
+
 .container .text-muted {
     margin: 20px 0;
 }
@@ -147,38 +145,23 @@ body {
 	margin-top: -10px;
 }
 
-.story img {
-	float: left;
-	margin: 10px 0px 0px 10px;
+.img-responsive {
+	text-align: center;
 	border-radius: 10px;
 	max-width: 100%;
 	height: auto;
-	width: auto;
+	margin-top: 13px;
+	margin-bottom: 13px;
 }
 
 
-.story h4 {
-	position: absolute;
-	margin-left: 130px;
-	margin-bottom: 20px;
-	width: 70%;
-	min-width: 20px;
+.story h1 {
+	font-size: 20px;
 }
-
-.story p{
-	position: absolute;
-	margin-right: 24px;
-	margin-left: 130px;
-	margin-top: 60px;
-	width: 80%;
-	min-width: 100px;
-}
-
 
 .story {
-	box-sizing: border-box;
-	margin: 0px 0px 10px 0px;
 	border-radius: 15px;
 	background-color: #ccf3ff;
-	padding-bottom: 130px;
+	line-height: 1.2;
+	margin-bottom: 12px;
 }
