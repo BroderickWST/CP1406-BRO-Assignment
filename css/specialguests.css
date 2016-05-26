@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* special guest again*/
+
+/*div.people {
+	 width:75%;
+	 padding: 25px; 
+	 float: right;
+/* backgroundpeople */
+
+div.backgroundSG {
+	background-color:#DFEAFC;
+	padding: 25px; 
+	border: white solid thick;
+
+}
+
+div.backgroundpeople {
+/*	background-color:lightgrey; 
+	border: white solid thick; */
+	width:75%; 
+	
+	float: right;
+
+}
+
+
+div.backgroundpeoplepic {
+/*	background-color:lightgrey; 
+	border: white solid thick; */
+	width:23%
+	
+}
