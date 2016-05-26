@@ -93,7 +93,15 @@
 
 <!--this page is going to have a donate option and also a benefactor option and that fancy card js integration-->
     <div class="row">
-        <div class="col-md-6 col-md-offset-2">
+        <div class="col-md-3 col-md-push-8">
+            <h3>Info!</h3>
+            <p><a href="events.html"><img src="images/sidebar/events.jpg"></a></p>
+            <p><a href="membership.html"><img src="images/draft-sidebar-member.png"></a></p>
+            <p><a href="donate.html"><img src="images/draft-sidebar-donate.png"></a></p>
+        </div><!--div.col-lg-3-->
+
+
+        <div class="col-md-6 col-md-offset-2 col-md-pull-3">
             <form role="form" data-toggle="validator">
                 <h4>Donate to Us</h4>
                 <div class="form-group">
@@ -127,22 +135,17 @@
                 </div><!--div.form-group-->
 
                             
-                <button type="submit" class="btn btn-default pull-right">Submit</button>
+                <button type="submit" class="btn btn-default pull-right"><a href="thanks.html">Submit</a></button>
             </form>
         </div><!--col lg 6-->
 
 
-        <div class="col-md-3">
-            <h3>Info!</h3>
-            <p><a href="events.html"><img src="images/sidebar/events.jpg"></a></p>
-            <p><a href="membership.html"><img src="images/draft-sidebar-member.png"></a></p>
-            <p><a href="donate.html"><img src="images/draft-sidebar-donate.png"></a></p>
-        </div><!--div.col-lg-3-->
 
-    </div><!--div.row-->
 
-    <div class="row">
-        <div class="col-md-6 col-md-offset-2">
+    <!--</div>&lt;!&ndash;div.row&ndash;&gt;-->
+
+    <!--<div class="row">-->
+        <div class="col-md-6 col-md-offset-2 col-md-pull-3">
                     <h4>Become a Benefactor</h4>
                     <p>
                       With a philanthropic gift of $200 or more (we leave that up to you), you can become
@@ -160,19 +163,20 @@
                     </p>
                     <br>
                     <h4>I wish to become a Barrier Reef Orchestra Benefactor and contribute...</h4><br>
-            <form>
+            <form role="form" data-toggle="validator">
                 <div class="form-group">
                     <input class="form-control" type="number" name="benefactordonate" placeholder="Enter contribution here"><br>
                     By<br>
                     <label class="radio-inline">
-                        <input type="radio" name="payment" value="cheque">Cheque<br>
+                        <input type="radio" name="payment" value="cheque" required>Cheque<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="payment" value="eftpos">EFTPOS<br>
+                        <input type="radio" name="payment" value="eftpos" required>EFTPOS<br>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="payment" value="cash">Cash<br>
+                        <input type="radio" name="payment" value="cash" required>Cash<br>
                     </label>
+                    <div class="help-block with-errors"></div>
                     <br><br>
                     Please place me/us on the benefactor roll as:<br>
                     <input class="form-control" type="text" name="benefname" placeholder="Enter your name/s here"><br>
