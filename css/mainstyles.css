@@ -169,6 +169,13 @@ body {
 	text-align: center;
 }
 
+.jumbotron p {
+	color: white;
+	text-shadow: 2px 2px 3px #000000;
+	font-family: 'Yesteryear', sans-serif;
+	text-align: center;
+}
+
 .jumbotron a:link {
 	color: white;
 	text-decoration: none;
@@ -190,6 +197,10 @@ body {
 	font-family: Open Sans, sans-serif;
 }
 
+.events p {
+	font-size: 100%;
+}
+
 .events h1 {
 	font-size: 22px;
 }
@@ -202,29 +213,10 @@ body {
 	box-sizing: border-box;
 	float: right;
 	margin: 10px;
-	width: 40%;
-	height: 40%;
-}
-
-.eventimgfloatleft img {
-	box-sizing: border-box;
-	float: left;
-	margin: 10px;
-	width: 40%;
-	height: 40%;
-}
-
-.eventimgcenter {
-	display: block;
-	box-sizing: border-box;
-	text-align: center;
-}
-
-.eventimgcenter img {
+	max-width: 100%;
+	height: auto;
 	border-radius: 30px;
-	box-sizing: border-box;
-	width: 75%;
-	height: 75%;
+	
 }
 
 .eventsbanner1 {
@@ -273,61 +265,23 @@ body {
 .pasteventslink {
 	text-align: center;
 	border-radius: 25px;
-	background-color: #80aeb7;
+	background-color: #ffffff;
 	font-family: Open Sans, sans-serif;
+	padding: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #048bca;
 }
 
-.pasteventslink a{
-	color: #FFFFFF;
+.pasteventslink:hover {
+	    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03);
+		transition:all 0.4s ease;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.eventbuttons {
-	margin-top: 20px;
-}
-
-.eventbutton {
-  font-size: 14px;
-  appearance: none;
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  color: #048bca;
-  border: #048bca solid 2px;
-  display: inline-block;
-  background-color: white;
-  padding: 11px;
-  text-align: center;
-  font-family: Open Sans, sans-serif;
-  font-weight: 500;
-  line-height: 0.9;
-  text-transform: capitalize;
-  box-shadow: #048bca 0 4px;
-  vertical-align: top;
-  transition: ease-out 0.1s margin, ease-out 0.1s background-color, ease-out 0.1s box-shadow;
-}
-
-.eventbutton:hover {
-  margin-top: 3px;
-  margin-bottom: -3px;
-  box-shadow: #33aaff 0 2px;
-}
-
-.eventbutton[disabled] {
-  opacity: 0.5;
-  color: white;
-  background: #33aaff;
-}
-
-.eventtext img {
-	box-sizing: border-box;
-	float: left;
-	margin: 10px;
 }
 
 /* special guests *?
@@ -453,62 +407,3 @@ header, #content, #middle, #sidebar {
 #pagewrap, header, #content, #middle, #sidebar, footer {
 	border: solid 1px #ccc;
 }
-
-
-
-/*
-.newsevents {
-	font-family: 'Montserrat', sans-serif;
-
-}
-
-.mission-statement p {
-	font-size: 27px;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-    word-spacing: 1px;
-	line-height: 1.8;
-	text-align: center;
-	font-family: 'Cardo', serif;
-}
-
-.mission-statement {
-	margin-top: -10px;
-}
-
-.story img {
-	float: left;
-	margin: 10px 0px 0px 10px;
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
-	width: auto;
-}
-
-
-.story h4 {
-	position: absolute;
-	margin-left: 130px;
-	margin-bottom: 20px;
-	width: 70%;
-	min-width: 20px;
-}
-
-.story p{
-	position: absolute;
-	margin-right: 24px;
-	margin-left: 130px;
-	margin-top: 60px;
-	width: 80%;
-	min-width: 100px;
-}
-
-
-.story {
-	box-sizing: border-box;
-	margin: 0px 0px 10px 0px;
-	border-radius: 15px;
-	background-color: #ccf3ff;
-	padding-bottom: 130px;
-}
-*/
