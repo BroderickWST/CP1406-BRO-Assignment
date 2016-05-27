@@ -97,8 +97,8 @@
         <div class="col-md-3 col-md-push-8">
             <h3>Info!</h3>
             <p><a href="events.html"><img src="images/sidebar/events.jpg"></a></p>
-            <p><a href="membership.html"><img src="images/draft-sidebar-member.png"></a></p>
-            <p><a href="donate.html"><img src="images/draft-sidebar-donate.png"></a></p>
+            <p><a href="membership.html"><img src="images/sidebar/join.jpg"></a></p>
+            <p><a href="donate.html"><img src="images/sidebar/donate.jpg"></a></p>
         </div><!--div.col-lg-3-->
 
 
@@ -135,17 +135,11 @@
                     <div class="help-block with-errors"></div>
                 </div><!--div.form-group-->
 
-                            
+
                 <button type="submit" class="btn btn-default pull-right"><a href="thanks.html">Submit</a></button>
             </form>
         </div><!--col lg 6-->
 
-
-
-
-    <!--</div>&lt;!&ndash;div.row&ndash;&gt;-->
-
-    <!--<div class="row">-->
         <div class="col-md-6 col-md-offset-2 col-md-pull-3">
                     <h4>Become a Benefactor</h4>
                     <p>
@@ -154,19 +148,21 @@
                         be published in each concert program and on our website for twelve months. As a benefactor you
                         will also receive two complimentary tickets to out next concert, be placed on the mailing list
                         for our newsletter and will be a guest at out annual Season's Launch function. Please complete
-                        the details below and mail to PO Box 576 Townsville 4810, make cheques payable to North
-                        Queensland Ensembles Inc. or you can scan and e-mail this to
-                        <a href="mailto:brotownsville@gmail.com" title="Click to send us an email!">brotownsville@gmail.com</a>
-                        and pay by direct debit to BSB 034 222 Account no. 173922. Donations are tax deductable. For more
+                        the details below. Donations are tax deductable. For more
                         information, contact Simon McConnell (ph: 0418776961,
-                        e-mail:<a href="mailto:mcconnellgray@optusnet.com.au" title="Click to send email Simon"> mcconnellgray@optusnet.com.au.</a>
+                        e-mail:<a href="mailto:mcconnellgray@optusnet.com.au" title="Click to send email to Simon"> mcconnellgray@optusnet.com.au.</a>
                         Your support of the Orchestra will be greatly appreciated.
                     </p>
                     <br>
-                    <h4>I wish to become a Barrier Reef Orchestra Benefactor and contribute...</h4><br>
             <form role="form" data-toggle="validator">
                 <div class="form-group">
-                    <input class="form-control" type="number" name="benefactordonate" placeholder="Enter contribution here"><br>
+                    <label for="benefactordonate">I wish to become a Barrier Reef Orchestra Benefactor and contribute...</label><br>
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input class="form-control" type="number" id="benefactordonate" aria-label="Amount to the nearest dollar" placeholder="Enter contribution here" required><br>
+                        <span class="input-group-addon">.00</span>
+                    </div>
+                    <div class="help-block with-errors"></div>
                     By<br>
                     <label class="radio-inline">
                         <input type="radio" name="payment" value="cheque" required>Cheque<br>
@@ -179,30 +175,33 @@
                     </label>
                     <div class="help-block with-errors"></div>
                     <br><br>
-                    Please place me/us on the benefactor roll as:<br>
-                    <input class="form-control" type="text" name="benefname" placeholder="Enter your name/s here"><br>
-                    OR:<br>
-                    <label class="radio-inline">
-                        <input type="radio" name="anon" value="anonymous">remain anonymous<br>
-                    </label>
+                    <div class="form-group">
+                        <label for="benefname">Please place me/us on the benefactor roll as:</label> <br>
+                        <input class="form-control" name="anonorname" type="text" id="benefname" placeholder="Enter your name/s here" required><br>
+                        OR:<br>
+                        <label class="radio-inline">
+                            <input type="radio" name="anonorname" value="anonymous" required>remain anonymous<br>
+                        </label>
+                    </div>
+
                     <br><br>
-                    First Name*:<br>
-                    <input class="form-control" type="text" name="bffname" placeholder="Enter first name here"><br>
-                    Last Name*:<br>
-                    <input class="form-control" type="text" name="bflname" placeholder="Enter last name here"><br>
-                    Address*:<br>
-                    <input class="form-control" type="text" name="bfaddress" placeholder="Enter address here"><br>
-                    Postcode*:<br>
-                    <input class="form-control" type="number" name="bfpc" placeholder="Enter postcode number here"><br>
-                    Phone number*:<br>
-                    <input class="form-control" type="number" name="bfphone" placeholder="Enter phone number here"><br>
-                    Mobile number*:<br>
-                    <input class="form-control" type="number" name="bfmobile" placeholder="Enter mobile number here"><br>
-                    E-mail*:<br>
-                    <input class="form-control" type="email" name="bfemail" placeholder="Enter your email address here"><br>
+                   <label for="bffname"> First Name*:</label><br>
+                    <input class="form-control" type="text" id="bffname" placeholder="Enter first name here" required><br>
+                    <label for="bflname">Last Name*:</label><br>
+                    <input class="form-control" type="text" id="bflname" placeholder="Enter last name here" required><br>
+                    <label for="bfaddress">Address*:</label><br>
+                    <input class="form-control" type="text" id="bfaddress" placeholder="Enter address here" required><br>
+                    <label for="bfpc">Postcode*:</label><br>
+                    <input class="form-control" type="number" id="bfpc" placeholder="Enter postcode number here" required><br>
+                    <label for="bfphone">Phone number*:</label><br>
+                    <input class="form-control" type="number" id="bfphone" placeholder="Enter phone number here" required><br>
+                    <label for="bfmobile">Mobile number:</label><br>
+                    <input class="form-control" type="number" id="bfmobile" placeholder="Enter mobile number here" required><br>
+                    <label for="bfemail">E-mail*:</label><br>
+                    <input class="form-control" type="email" id="bfemail" placeholder="Enter your email address here" required><br>
                 </div><!--div.form-group-->
 
-                <input class="btn btn-default pull-right" type="submit" value="Submit">
+                <button type="submit" class="btn btn-default pull-right"><a href="thanks.html">Submit</a></button>
             </form>
         </div><!--col lg 6-->
 
